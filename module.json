@@ -1,0 +1,42 @@
+{
+	"singleton": false,
+	"category": "automation_basic",
+	"author": "Ralph Wetzel",
+	"moduleName":"OnCloseTester",
+	"version": "0.1.0",
+	"maturity": "unstable",
+	"defaults": {
+		"title": "__m_title__",
+		"description": "__m_descr__"
+	},
+	"schema" : {
+		"type": "object",
+		"properties" : {
+			"port": {
+				"required": true,
+				"type": "integer",
+				"default": 5555
+			},
+			"incr": {
+				"required": true,
+				"type": "boolean",
+				"default": false
+			}
+		},
+		"required": false
+	},
+	"options" : {
+		"fields" : {
+			"port": {
+				"type": "integer",
+				"label": "Port:",
+				"order": 1
+			},
+			"incr": {
+				"type": "checkbox",
+				"label": "Increment ports",
+				"order": 2
+			}
+		}
+	}
+}
